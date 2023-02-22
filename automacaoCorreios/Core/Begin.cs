@@ -27,13 +27,13 @@ namespace automacaoCorreios.Core
             if (TestContext.CurrentContext.Result.Outcome != ResultState.Success != true)
             {
                 var screenshot = ((ITakesScreenshot)driver).GetScreenshot();
-                var filePath = "/Users/leonardobardelin/Projects/automacaoCorreios/automacaoCorreios/ScreenshotReport/";
+                var filePath = "/Users/leonardobardelin/Projects/Correios-Automacao/automacaoCorreios/ScreenshotReport/";
                 screenshot.SaveAsFile(filePath + "Sucesso - " + testName + ".jpeg " + localtime);
             }
                 else
                 {
                     var screenshot = ((ITakesScreenshot)driver).GetScreenshot();
-                    var filePath = "/Users/leonardobardelin/Projects/automacaoCorreios/automacaoCorreios/ScreenshotReport/";
+                    var filePath = "/Users/leonardobardelin/Projects/Correios-Automacao/automacaoCorreios/ScreenshotReport/";
                     screenshot.SaveAsFile(filePath + "Falha - " + testName + ".jpeg " + localtime);
                 }
 
