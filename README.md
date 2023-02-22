@@ -13,8 +13,9 @@
 3. Clicar em "File"
 4. Clicar em "Open"
 5. Selecinar a pasta raiz do projeto
-6. Clicar em "OK"
-7. O projeto será carregado e as dependências serão baixadas automaticamente. Aguardar até o fim.
+6. Selecionar o arquivo com a extensão .sln
+7. Clicar em "OK"
+8. O projeto será carregado e as dependências serão baixadas automaticamente. Aguardar até o fim.
 
 ## Arquitetura
 
