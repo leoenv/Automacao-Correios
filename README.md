@@ -23,7 +23,7 @@ A arquitetura padrão composta por:
 
 - `Core`: Pacote que contém as classes pai, que definem comportamentos ou contém implementações que serão extendidas pelas classes filhas. As já existentes são:
   - **Begin:** Classe que contém tanto os métodos iniciais quanto finais na execução de cada teste
-    - **Caminho para salvar evidências:** Dentro do método FimDoTeste, alterar o valor da variável filePath" inserindo o caminho correto da pasta "ScreenshotReport" de onde o projeto foi salvo localmente.
+    - **Caminho para salvar evidências:** Dentro do método FimDoTeste, alterar o valor da variável "filePath" inserindo o caminho correto da pasta "ScreenshotReport" de onde o projeto foi salvo localmente.
     
   - **DSL:** Classe que contém os métodos de interação dos testes UI
   
