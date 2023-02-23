@@ -1,7 +1,7 @@
 ## Tecnologias utilizadas no projeto
 
 - C#
-- .NET 5.0
+- .NET 6.0
 - IDE de Desenvolvimento - Visual Studio
 - NUnit
 - Selenium 
