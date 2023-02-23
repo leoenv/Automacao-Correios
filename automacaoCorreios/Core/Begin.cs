@@ -14,7 +14,7 @@ namespace automacaoCorreios.Core
         [SetUp]
         public void InicioTeste()
 		{
-            driver = new ChromeDriver(@"C:\Users\Pichau\Desktop\Projetos\automacaoCorreios\Driver\");
+            driver = new ChromeDriver(@"C:\Users\Pichau\Desktop\Projetos\automacao-correios\automacaoCorreios\Driver\");
             driver.Navigate().GoToUrl("https://www.correios.com.br/");
             driver.Manage().Window.Maximize();
         }
@@ -29,13 +29,13 @@ namespace automacaoCorreios.Core
             if (TestContext.CurrentContext.Result.Outcome != ResultState.Success != true)
             {
                 var screenshot = ((ITakesScreenshot)driver).GetScreenshot();
-                var filePath = @"C:\Users\Pichau\Desktop\Projetos\automacaoCorreios\ScreenshotReport\";
+                var filePath = @"C:\Users\Pichau\Desktop\Projetos\automacao-correios\automacaoCorreios\ScreenshotReport\";
                 screenshot.SaveAsFile(filePath + @"\Sucesso - " + testName + ".jpeg " + localtime);
             }
                 else
                 {
                     var screenshot = ((ITakesScreenshot)driver).GetScreenshot();
-                    var filePath = @"C:\Users\Pichau\Desktop\Projetos\automacaoCorreios\ScreenshotReport\";
+                    var filePath = @"C:\Users\Pichau\Desktop\Projetos\automacao-correios\automacaoCorreios\ScreenshotReport\";
                     screenshot.SaveAsFile(filePath + @"\Falha - " + testName + ".jpeg " + localtime);
                 }
 
