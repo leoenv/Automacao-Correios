@@ -1,7 +1,7 @@
 ## Tecnologias utilizadas no projeto
 
 - C#
-- .NET 5.0
+- .NET 6.0
 - IDE de Desenvolvimento - Visual Studio
 - NUnit
 - Selenium 
@@ -29,7 +29,8 @@ A arquitetura padrão composta por:
   
   - **GlobalVariables:** Classe que contém as variáveis globais
   
-- `Driver`: Pacote que contém o arquivo chromedriver referente ao navegador utilizado nos testes (Verificar se a versão do arquivo é compatível ao do navegador utilizado no teste)
+- `Driver`: Pacote que contém o arquivo chromedriver referente ao navegador utilizado nos testes. (Verificar se a versão do arquivo é compatível ao do navegador instalado na máquina)
+    - **Caminho do arquivo chromedriver:** Dentro do método InicioTeste, incluir o caminho do arquivo de onde foi salvo localmente.
 
 - `Page`: Pacote que contém as classes dos respectivos testes, aonde terão os métodos que serão utilizados nos testes para inserir valores para interação 
 
