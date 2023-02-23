@@ -21,7 +21,7 @@ namespace automacaoCorreios.Core
         public void FimDoTeste()
         {
             var todayDate = DateTime.Now;
-            var localtime = todayDate.ToString("yy-MM-dd HH:mm:ss");
+            var localtime = todayDate.ToString("yy_MM_dd HH-mm-ss");
             var testName = TestContext.CurrentContext.Test.Name;
 
             if (TestContext.CurrentContext.Result.Outcome != ResultState.Success != true)
